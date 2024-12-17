@@ -1,4 +1,5 @@
 <template>
+  <Header></Header>
   <div id="slides" class="dancer_section layout_padding">
     <div class="container">
       <h1 class="ballet_text">Ballet Dancing</h1>
@@ -13,11 +14,16 @@
       <div class="click_bt"><a href="#">Click To Signup</a></div>
     </div>
   </div>
+  <Footer></Footer>
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+
 export default {
-  name: "Dancing"
+  name: "Dancing",
+  components: {Footer, Header}
 }
 </script>
 

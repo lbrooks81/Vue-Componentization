@@ -8,24 +8,27 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="trainings.html">TRAININGS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="classes.html">CLASSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="shows.html">SHOWS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
+          <router-link class="nav-item active" to="/App">
+            <li class="nav-link">HOME</li>
+          </router-link>
+          <router-link class="nav-item" :to="{
+            name: 'Dancing',
+            params: { rendered: true }
+          }">
+            <li class="nav-link">TRAININGS</li>
+          </router-link>
+          <router-link class="nav-item" to="/Classes">
+            <li class="nav-link">CLASSES</li>
+          </router-link>
+          <router-link class="nav-item" to="/Hours">
+            <li class="nav-link">SHOWS</li>
+          </router-link>
+          <router-link class="nav-item" to="/About">
+            <li class="nav-link">ABOUT</li>
+          </router-link>
+          <router-link class="nav-item" to="/Contact">
+            <li class="nav-link">CONTACT</li>
+          </router-link>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <div class="search_icon"><a href="#"><img src="/images/search-icon.png"></a></div>
@@ -36,9 +39,15 @@
 </template>
 
 <script>
+
+
+
+
+
 export default {
-  name: "Header"
+  name: "Header",
 }
+
 </script>
 
 
