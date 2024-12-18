@@ -8,7 +8,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <router-link class="nav-item active" to="/App">
+          <router-link class="nav-item active" to="/Home">
             <li class="nav-link">HOME</li>
           </router-link>
           <router-link class="nav-item" :to="{
@@ -39,10 +39,6 @@
 </template>
 
 <script>
-
-
-
-
 
 export default {
   name: "Header",

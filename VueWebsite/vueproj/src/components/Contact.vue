@@ -35,8 +35,6 @@ name: "Contact"
 }
 </script>
 
-
-
 <style scoped>
 
 </style>

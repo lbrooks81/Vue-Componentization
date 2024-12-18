@@ -1,5 +1,4 @@
 <template>
-  <Header v-if=""></Header>
   <div class="opening_section layout_padding">
     <div class="container">
       <h1 class="ballet_text">Opening Hours</h1>
@@ -33,19 +32,12 @@
       </div>
     </div>
   </div>
-  <Footer></Footer>
 </template>
 
 <script>
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
 
-defineProps({
-  /* think of a better name, this describes whether the component is used as its own page or not */
-  rendered: {
-    type: Boolean
-  }
-})
 export default {
   name: "Hours",
   components: {Footer, Header}

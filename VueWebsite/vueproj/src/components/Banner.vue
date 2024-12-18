@@ -9,8 +9,8 @@
                 <div class="banner_title">
                   <h1 class="dance_text">Dance beat</h1>
                   <p>Move with us - your ultimate dance journey starts here!</p>
-                  <div class="banner-btn about-btn"><a href="about.html">About Us</a></div>
-                  <div class="banner-btn contact-btn"><a href="contact.html">Contact Us</a></div>
+                  <div class="banner-btn about-btn"><router-link to="/About">About Us</router-link></div>
+                  <div class="banner-btn contact-btn"><router-link to="/Contact">Contact Us</router-link></div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -25,8 +25,8 @@
                   <h1 class="dance_text">Dance beat</h1>
                   <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magn</p>
-                  <div class="banner-btn about-btn"><a href="about.html">About Us</a></div>
-                  <div class="banner-btn contact-btn"><a href="contact.html">Contact Us</a></div>
+                  <div class="banner-btn about-btn"><router-link to="/About">About Us</router-link></div>
+                  <div class="banner-btn contact-btn"><router-link to="Contact">Contact Us</router-link></div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -41,8 +41,8 @@
                   <h1 class="dance_text">Dance beat</h1>
                   <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magn</p>
-                  <div class="banner-btn about-btn"><a href="about.html">About Us</a></div>
-                  <div class="banner-btn contact-btn"><a href="contact.html">Contact Us</a></div>
+                  <div class="banner-btn about-btn"><router-link to="about.html">About Us</router-link></div>
+                  <div class="banner-btn contact-btn"><router-link to="contact.html">Contact Us</router-link></div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -51,10 +51,8 @@
             </div>
           </div>
         </div>
-        <button ref="l-btn"
-            @mouseover="this.$refs['l-btn'].classList.add('overlay');"
-            @mouseleave="this.$refs['l-btn'].classList.remove('overlay'); "
-            class="carousel-control-prev" type="button" data-bs-target="#my_slider" data-bs-slide="prev">
+        <button ref="l-btn" class="carousel-control-prev" type="button"
+                data-bs-target="#my_slider" data-bs-slide="prev">
           <i class="fa fa-left"><img src="/images/left-icon.png"></i>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#my_slider" data-bs-slide="next">

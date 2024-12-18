@@ -11,19 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
   <Header></Header>
-  <Banner></Banner>
-  <div class="students-section layout_padding">
-    <div class="container-fluid">
-      <h1 class="text welcome_text">Welcome New Students!</h1>
-      <p class="text sign-up-text">Sign up now to receive a 25-minute trial lesson - completely free!</p>
-      <div class="click_bt"><a href="contact.html">Click To Signup</a></div>
-    </div>
-  </div>
-  <Classes></Classes>
-  <Hours ></Hours>
-  <About></About>
-  <Testimonial></Testimonial>
-  <Contact></Contact>
+  <router-view></router-view>
   <Footer></Footer>
 </template>
 
